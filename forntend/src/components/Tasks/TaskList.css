@@ -1,0 +1,108 @@
+.task-list-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+.task-list-table th,
+.task-list-table td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+}
+
+.task-list-table th {
+    background-color: #f2f2f2;
+}
+
+.task-list-table tr:hover {
+    background-color: #f1f1f1;
+}
+
+.task-list-table button {
+    margin-right: 5px;
+    padding: 5px 10px;
+    border: none;
+    border-radius: 3px;
+    background-color: #007bff;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.task-list-table button:hover {
+    background-color: #0056b3;
+}
+/* TaskList.css */
+
+/* Container for filters */
+.filters {
+    display: flex;
+    justify-content: space-between; /* Space out the dropdowns */
+    margin-bottom: 20px; /* Space below filters */
+}
+
+/* Styling the select dropdowns */
+.filters select {
+    padding: 10px; /* Add padding for better touch targets */
+    font-size: 16px; /* Larger font size for readability */
+    border: 1px solid #ccc; /* Light border for dropdowns */
+    border-radius: 5px; /* Rounded corners */
+    transition: border-color 0.3s; /* Smooth border color transition */
+    width: 45%; /* Width of each dropdown */
+}
+
+/* Change border color on focus */
+.filters select:focus {
+    border-color: #007BFF; /* Change border color on focus */
+    outline: none; /* Remove default outline */
+}
+
+/* Task list table styling */
+.task-list-table {
+    width: 100%; /* Full width table */
+    border-collapse: collapse; /* Remove space between borders */
+    margin-top: 20px; /* Space above table */
+}
+
+/* Table header styling */
+.task-list-table th {
+    background-color: #f2f2f2; /* Light gray background for header */
+    padding: 10px; /* Padding for header cells */
+    text-align: left; /* Left align header text */
+}
+
+/* Table cell styling */
+.task-list-table td {
+    padding: 10px; /* Padding for data cells */
+    border-bottom: 1px solid #ddd; /* Bottom border for data rows */
+}
+
+/* Button styling */
+button {
+    padding: 8px 12px; /* Padding for buttons */
+    background-color: #007BFF; /* Blue background */
+    color: white; /* White text color */
+    border: none; /* Remove border */
+    border-radius: 5px; /* Rounded corners */
+    cursor: pointer; /* Pointer cursor on hover */
+    transition: background-color 0.3s; /* Smooth background color transition */
+}
+
+/* Change button background on hover */
+button:hover {
+    background-color: #0056b3; /* Darker blue on hover */
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .filters {
+        flex-direction: column; /* Stack filters on smaller screens */
+        align-items: stretch; /* Stretch filters to full width */
+    }
+
+    .filters select {
+        width: 100%; /* Full width dropdowns on small screens */
+        margin-bottom: 10px; /* Space between stacked dropdowns */
+    }
+}

@@ -1,0 +1,58 @@
+.category-list-container {
+    max-width: 800px; /* Maximum width of the container */
+    margin: 20px auto; /* Center the container */
+    padding: 20px; /* Padding inside the container */
+    border: 1px solid #ddd; /* Light gray border */
+    border-radius: 8px; /* Rounded corners */
+    background-color: #fff; /* White background */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+}
+
+h2 {
+    text-align: center; /* Center the heading */
+    margin-bottom: 20px; /* Space below the heading */
+}
+
+.category-table {
+    width: 100%; /* Full width */
+    border-collapse: collapse; /* Collapse borders */
+}
+
+.category-table th,
+.category-table td {
+    padding: 10px; /* Padding inside cells */
+    text-align: left; /* Align text to the left */
+    border-bottom: 1px solid #ddd; /* Light gray border between rows */
+}
+
+.category-table th {
+    background-color: #f2f2f2; /* Light gray background for header */
+}
+
+.delete-button {
+    background-color: #e74c3c; /* Red color for delete button */
+    color: white; /* White text color */
+    border: none; /* Remove default border */
+    border-radius: 4px; /* Rounded corners */
+    padding: 5px 10px; /* Padding inside button */
+    cursor: pointer; /* Pointer cursor on hover */
+    transition: background-color 0.3s; /* Smooth transition for hover effect */
+}
+
+.delete-button:hover {
+    background-color: #c0392b; /* Darker red on hover */
+}
+.create-category-button {
+    background-color: #3498db; /* Blue color for the button */
+    color: white; /* White text color */
+    border: none; /* Remove default border */
+    border-radius: 4px; /* Rounded corners */
+    padding: 10px 15px; /* Padding inside button */
+    cursor: pointer; /* Pointer cursor on hover */
+    margin-bottom: 20px; /* Space below the button */
+    transition: background-color 0.3s; /* Smooth transition for hover effect */
+}
+
+.create-category-button:hover {
+    background-color: #2980b9; /* Darker blue on hover */
+}

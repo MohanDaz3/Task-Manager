@@ -1,0 +1,22 @@
+/* TaskForm.css */
+.task-form-container{
+    margin-top: 30px;
+}
+.task-status {
+    display: flex;
+    justify-content: space-around; /* Align items horizontally with space around */
+    margin-bottom: 20px; /* Add some space below the radio buttons */
+}
+
+.task-status label {
+    margin-right: 15px; /* Space between radio buttons */
+}
+
+.task-buttons {
+    display: flex;
+    justify-content: space-between; /* Align buttons with space between them */
+}
+
+.task-button {
+    margin-left: 10px; /* Add margin for spacing between buttons */
+}
