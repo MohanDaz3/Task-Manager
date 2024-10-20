@@ -4,7 +4,6 @@ const jwt = require('jsonwebtoken');
 
 
 exports.signup = async (req, res) => {
-    console.log("Signup attempt detected");
 
     const { username, password } = req.body;
 
@@ -12,7 +11,6 @@ exports.signup = async (req, res) => {
         // Check if the user already exists
         let user = await User.findOne({ username });
         if (user) {
-            console.log("User already exists with username:", username);
             return res.status(400).json({ msg: "User already exists" });
         }
 
@@ -33,7 +31,6 @@ exports.signup = async (req, res) => {
         );
 
         // Send response with the token
-        console.log("User registered successfully with username:", username);
         res.status(201).json({ token });
 
     } catch (err) {

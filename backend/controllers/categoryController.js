@@ -32,8 +32,6 @@ exports.createCategory = async (req, res) => {
 exports.deleteCategory = async (req, res) => {
     try {
         const categoryId = req.params.id; // Store the category ID
-        console.log('Attempting to delete category with ID:', categoryId); // Log the ID for debugging
-
         // Find the category by ID
         const category = await Category.findById(categoryId);
 

@@ -17,7 +17,6 @@ exports.getFilteredTasks = async (req, res) => {
     const { status, category } = req.query; // Retrieve filters from query params
     const validStatuses = ['pending', 'In Progress', 'Completed']; // Example of valid statuses
     
-    console.log(req.query);
 
     // Validate status
     if (status && !validStatuses.includes(status)) {
@@ -34,7 +33,6 @@ exports.getFilteredTasks = async (req, res) => {
     // If category is provided, convert it to an ObjectId
     if (category) {
         const categoryId = await Category.findOne({ name: category }); // Adjust the query to match your Category model
-        console.log(categoryId)
         if (categoryId) {
             query.category = categoryId._id; // Add category filter using ObjectId
         } else {
